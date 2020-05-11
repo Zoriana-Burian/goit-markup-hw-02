@@ -12,6 +12,9 @@
     --accent-color: #2196F3;
     --second-title-color: #FFFFFF;
     --primary-bg-colot:#FFFFFF; 
+    --link-color:#AFB1B8;
+    --footer-ad-color: rgba(255, 255, 255, 0.6);
+    --footer-text-color: rgba(255, 255, 255, 0.4);
 }
 .body {
     background-color: var(--primary-bg-colot);
@@ -65,7 +68,7 @@
 }
 
 .auth-nav .link {
-    color: #757575;
+    color: var(--primary-text-color);
     
     font-weight: 500;
     font-size: 14px;
@@ -130,7 +133,7 @@
   
 }
 .description-list .svg {
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
 }
 
 .description-list .svg:hover {
@@ -149,6 +152,10 @@
    letter-spacing: 0.03em;
    text-transform: uppercase;
    
+}
+
+.work-list .link {
+    text-decoration: none;
 }
 
 /*Team*/
@@ -173,12 +180,14 @@
 }
 
 .chain .link {
-    background: #AFB1B8;
+    color: var(--primary-text-color);
+    background-color: var(--link-color);
     text-decoration: none;
 }
 
 .chain .link:hover, 
 .chain .link:focus {
+    color: var(--second-title-color);
     background-color: var(--accent-color);
 }
 
@@ -201,17 +210,18 @@
 /* Clients*/
 
 .clients .link {
-    color: #AFB1B8;;
+    color: var(--link-color);
 }
 .clients .link:hover,
 .clients .link:focus {
-    color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 /*Footer*/
 
 .address-list .text {
     color: var(--second-title-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -220,8 +230,14 @@
 }
 
 .address-list .link {
-    color: rgba(255, 255, 255, 0.6);
-    ;
+    color: var(--footer-ad-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
 }
 
 .subscription {
@@ -235,17 +251,19 @@
 }
 
 .social-network .link {
-    background: #AFB1B8;
+    color: var(--second-title-color);
+    background-color: var(--link-color);
     text-decoration: none;
 }
 
 .social-network .link:hover, 
 .social-network .link:focus {
+    color: var(--second-title-color);
     background-color: var(--accent-color);
 }
 
 .company {
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--footer-text-color);
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
@@ -267,6 +285,12 @@
     background-color: var(--primary-bg-colot);
 }
 
+.button-portfolio .type:hover,
+.button-portfolio .type:focus {
+    color: var(--second-title-color);
+    background-color: var(--accent-color);
+}
+
 .section-portfolio .title {
     color: var(--second-title-color);
     
@@ -286,8 +310,16 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    
 
+}
+
+.card-list .link {
+    text-decoration: none;
+}
+
+.card-list .link:hover, .card-list .link:focus {
+    color: var(--second-title-color);
+    background-color: var(--accent-color);
 }
 
 .card-list .text-second {
