@@ -16,6 +16,13 @@
     --footer-ad-color: rgba(255, 255, 255, 0.6);
     --footer-text-color: rgba(255, 255, 255, 0.4);
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    outline: 2px solid tomato;
+}
 .body {
     background-color: var(--primary-bg-colot);
     color: var(--primary-text-color);
@@ -42,7 +49,14 @@
 }
 
  ul {
+     padding: 0;
+     margin: 0;
     list-style: none;
+}
+
+.page-header {
+    background-color: var(--primary-bg-colot);
+    
 }
 
 /* Site nav*/
@@ -85,25 +99,39 @@
 
 .hero-title {
     color: var(--second-title-color);
+
+    margin-top: 0;
+    margin-bottom: 46px;
     
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,4;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    background-color: tomato;
 }
 
 /* Section*/
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
     color: var(--title-text-color);
+
+   margin-top: 0;
+   margin-bottom: 0;
 
    font-weight: 700;
    font-size: 36px;
    line-height: 1.16;
    text-align: center;
-   letter-spacing: 0.03em;
+   letter-spacing: 0.03em; 
+    
 }
 
 /* Description*/
@@ -111,10 +139,15 @@
 .section-description .title {
     color: var(--second-title-color);
 
+ 
+
 }
 
 .description-list .title {
     color: var(--title-text-color);
+
+    margin-top: 0;
+    margin-bottom: 10px;
       
    font-weight: 700;
    font-size: 14px;
@@ -122,6 +155,11 @@
    letter-spacing: 0.03em;
    text-transform: uppercase; 
        
+}
+
+.description-list p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -196,8 +234,14 @@
 .button {
     color: var(--second-title-color);
     background-color: var(--accent-color);
+    
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 1px solid transparent;
 
     font-family: inherit;
+    text-align: center;
     text-decoration: none;
 }
 
